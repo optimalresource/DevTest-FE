@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toggles {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.toggledData {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+}
