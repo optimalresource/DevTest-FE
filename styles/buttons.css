@@ -88,6 +88,16 @@
   border-color: #e18700;
 }
 
+.primary-class {
+  color: #fbb30b;
+  background: #fbf3e6;
+  border-radius: 10px;
+}
+
+.primary-class:hover {
+  opacity: 0.9;
+}
+
 @media screen and (max-width: 575px) {
   .primary-round,
   .primary-round-toggle {

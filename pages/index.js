@@ -20,8 +20,8 @@ export default function Home() {
           </Link>
         </h1>
         <h2 className="underline hover:no-underline">
-          <Link href="/login">
-            <a>Login or Register</a>
+          <Link href="/user/gigs">
+            <a>See all Gigs</a>
           </Link>
         </h2>
       </main>
