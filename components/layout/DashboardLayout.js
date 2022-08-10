@@ -8,7 +8,7 @@ const DashboardLayout = (props) => {
   return (
     <div className={styles.container}>
       <LeftSection></LeftSection>
-      <RightSection>
+      <RightSection title={props.title} middleChildren={props?.middleChildren}>
         <BodySection>{props.children}</BodySection>
       </RightSection>
     </div>

@@ -4,41 +4,6 @@ const GigsComponent = () => {
   return (
     <Fragment>
       <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
-      <div>index</div>
     </Fragment>
   );
 };
