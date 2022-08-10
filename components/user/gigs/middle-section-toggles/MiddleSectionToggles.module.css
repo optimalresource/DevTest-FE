@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -3px;
+  margin-top: 20px;
+  z-index: 9;
+}
+
+.box {
+  width: 200px;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.box:nth-child(2) {
+  justify-content: center;
+}
+
+.box:last-child {
+  justify-content: flex-end;
+}
+
+.active {
+  border-bottom: 3px solid #fbb30b;
+}
+
+.box span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #fbb30b;
+  background: #fbf3e6;
+}
+
+.box.active > span {
+  background: #fbb30b;
+  color: #fff;
+}

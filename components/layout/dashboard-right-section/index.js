@@ -7,7 +7,17 @@ const RightSection = (props) => {
   return (
     <div className={styles.container}>
       <TopSection></TopSection>
-      <MiddleSection title={props?.title}>
+      <MiddleSection
+        title={props?.title}
+        showMiddleButton={props?.showMiddleButton}
+        buttonVariant={props?.buttonVariant}
+        buttonLabel={props?.buttonLabel}
+        buttonUrl={props?.buttonUrl}
+        buttonSurface={props?.buttonSurface}
+        buttonClassNames={props?.buttonClassNames}
+        buttonLeftIcon={props?.buttonLeftIcon}
+        buttonRightIcon={props?.buttonRightIcon}
+      >
         {props?.middleChildren}
       </MiddleSection>
       {props?.children}
