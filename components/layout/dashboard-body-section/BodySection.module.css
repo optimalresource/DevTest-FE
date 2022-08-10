@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  padding: 20px;
+  background: #fbfbff;
+}
+
+.container a {
+  color: #da9904;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}

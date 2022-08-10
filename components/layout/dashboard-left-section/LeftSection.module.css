@@ -1,0 +1,41 @@
+.container {
+  width: 250px;
+  position: relative;
+  background: #fcfcff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.logoSection {
+  padding: 20px 40px;
+}
+
+.navContainer {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.navContainer a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #a9b0c5;
+}
+
+.navContainer a.active {
+  color: #fbb30b;
+}

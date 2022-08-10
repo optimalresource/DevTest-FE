@@ -1,0 +1,11 @@
+.container {
+  flex: 1;
+  position: relative;
+  background: #fbfbff;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid #dbdbdb8c;
+}
