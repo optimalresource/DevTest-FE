@@ -32,6 +32,11 @@
   line-height: 80%;
 }
 
+.medium {
+  font-size: 16px;
+  line-height: 88%;
+}
+
 .large {
   font-size: 18px;
   line-height: 94.8%;
@@ -76,6 +81,11 @@
 
 .toggle.leftSpace {
   margin-left: 15px;
+}
+
+.secondary {
+  color: #e18700;
+  border-color: #e18700;
 }
 
 @media screen and (max-width: 575px) {

@@ -1,21 +1,25 @@
 import React from "react";
 
-function ButtonComponent({
-  label,
-  onClick = () => {},
-  variant = "devTest-Gigs",
-  surface = "borderAndFilled",
-  className,
-  leftSpace = false,
-  stretched = false,
-  toggle = false,
-  leftIcon = "",
-  rightIcon = "",
-  colorButton = "",
-  size = "large",
-  buttonShape = "round-corners",
-  ...props
-}) {
+const ButtonComponent = React.forwardRef(function Button(
+  {
+    label,
+    onClick = () => {},
+    variant = "devTest-Gigs",
+    surface = "borderAndFilled",
+    className,
+    leftSpace = false,
+    stretched = false,
+    toggle = false,
+    leftIcon,
+    rightIcon,
+    colorButton = "",
+    size = "large",
+    buttonShape = "round-corners",
+    minWidth = 1,
+    ...props
+  },
+  ref
+) {
   const borderAndBackgroundColor =
     surface == "borderNoFill"
       ? getSolidBorder(variant)
@@ -23,7 +27,7 @@ function ButtonComponent({
 
   const addLeftSpace = leftSpace ? "leftSpace" : "";
   const addStretched = stretched ? "stretched" : "not-stretched";
-  const addSize = size === "large" ? "large" : "small";
+  const addSize = size;
   const addToggle = toggle ? "toggle" : "";
 
   return (
@@ -31,13 +35,15 @@ function ButtonComponent({
       className={`${addSize} ${addToggle} ${addStretched} ${addLeftSpace} ${borderAndBackgroundColor} ${className} ${colorButton}`}
       onClick={onClick}
       {...props}
+      style={{ minWidth: minWidth + "px" }}
+      ref={ref}
     >
       {leftIcon}
       {label}
       {rightIcon}
     </button>
   );
-}
+});
 
 const getSolidBorder = (variant) => {
   switch (variant) {
