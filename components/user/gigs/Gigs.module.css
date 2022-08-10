@@ -9,6 +9,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .toggledData {
@@ -16,4 +17,48 @@
   flex-direction: column;
   width: 100%;
   padding-top: 50px;
+  position: relative;
+}
+
+.toggledData table {
+  width: 100%;
+  /* border-collapse: collapse; */
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+.toggledData td,
+.toggledData th {
+  border: 0;
+  text-align: left;
+  padding: 8px;
+}
+
+.toggledData tbody tr {
+  background-color: #fff;
+  box-shadow: 0px 0.926523px 3.70609px rgba(5, 130, 18, 0.16),
+    inset 0px 0.926523px 0.926523px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+.toggledData thead th {
+  padding-bottom: 20px;
+  color: #565d74;
+}
+
+.toggledData th span {
+  color: #fbb30b;
+}
+
+.toggledData td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #e4e4e4;
+  font-size: 30px;
+}
+.toggledData td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
