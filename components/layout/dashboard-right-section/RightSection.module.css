@@ -8,4 +8,6 @@
   flex-direction: column;
   justify-content: space-between;
   border-left: 1px solid #dbdbdb8c;
+  width: 100%;
+  max-width: calc(1920px - 250px);
 }

@@ -2,10 +2,12 @@
   width: 100%;
   position: relative;
   min-height: 100px;
+  max-width: calc(1920px - 250px);
 }
 .fixedContainer {
   position: fixed;
   width: calc(100% - 250px);
+  max-width: calc(1920px - 250px);
   padding: 20px 40px;
   display: flex;
   flex-direction: row;
