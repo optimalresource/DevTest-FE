@@ -7,5 +7,9 @@ export default function Dashboard() {
 }
 
 Dashboard.getLayout = function getLayout(page) {
-  return <DashboardLayout>{page}</DashboardLayout>;
+  return (
+    <DashboardLayout title="Dashboard" showMiddleButton={false}>
+      {page}
+    </DashboardLayout>
+  );
 };

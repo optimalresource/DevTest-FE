@@ -1,3 +1,8 @@
+@import url("http://fonts.cdnfonts.com/css/circular-std");
+@import url("http://fonts.cdnfonts.com/css/karla");
+@import url("http://fonts.cdnfonts.com/css/graphie");
+@import url("http://fonts.cdnfonts.com/css/nunito");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,8 +11,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
 }
 
 a {

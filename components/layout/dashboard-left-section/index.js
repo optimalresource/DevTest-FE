@@ -34,7 +34,7 @@ const LeftSection = (props) => {
           </Link>
           <Link href="/user/company">
             <a className={active === "/user/company" ? styles.active : ""}>
-              <Icon icon="material-symbols:width-wide-sharp" />
+              <Icon icon="eva:npm-fill" />
               Company
             </a>
           </Link>
