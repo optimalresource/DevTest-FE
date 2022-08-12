@@ -71,7 +71,7 @@ const GigsComponent = () => {
                         label="Delete"
                         onClick={() => {}}
                         surface="borderAndFilled"
-                        className="primary-round primary-class"
+                        className="primary-round primary-class no-margin"
                         leftIcon=""
                         rightIcon=""
                         minWidth={120}

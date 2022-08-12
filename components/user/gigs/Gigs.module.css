@@ -62,3 +62,43 @@
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+@media (max-width: 1040px) {
+  .toggles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: stretch;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 828px) {
+  .toggles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .toggledData table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 628px) {
+  .toggles {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .toggles {
+    row-gap: 0;
+  }
+}
+
+@media (max-width: 444px) {
+  .toggles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

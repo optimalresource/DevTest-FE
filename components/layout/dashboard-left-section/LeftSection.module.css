@@ -38,3 +38,9 @@
 .navContainer a.active {
   color: #fbb30b;
 }
+
+@media (max-width: 1300px) {
+  .container {
+    display: none;
+  }
+}
