@@ -98,6 +98,10 @@
   opacity: 0.9;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 @media screen and (max-width: 575px) {
   .primary-round,
   .primary-round-toggle {
@@ -106,6 +110,11 @@
   .primary-round,
   .primary-round-toggle {
     margin-bottom: 30px;
+  }
+
+  .primary-round.no-margin,
+  .primary-round-toggle.no-margin {
+    margin-bottom: 0;
   }
 
   .leftSpace,

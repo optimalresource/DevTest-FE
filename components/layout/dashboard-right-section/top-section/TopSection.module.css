@@ -19,7 +19,11 @@
 }
 
 .leftSection {
-  width: auto;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
 }
 
 .rightSection {
@@ -42,4 +46,81 @@
 
 .inputWidth {
   width: 300px;
+}
+
+.logoSection {
+  display: none;
+}
+
+.InputWithAdornment {
+  width: auto;
+}
+
+.menu {
+  display: none;
+}
+
+.desktopProfile {
+  display: flex;
+  align-items: center;
+}
+
+.mobileProfile {
+  display: none;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1300px) {
+  .fixedContainer {
+    width: 100%;
+  }
+  .logoSection {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .desktopProfile {
+    display: none;
+  }
+  .mobileProfile {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 785px) {
+  .InputWithAdornment {
+    display: none;
+  }
+  .fixedContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .email {
+    display: none;
+  }
+  .rightSection,
+  .tools {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 330px) {
+  .settings {
+    display: none;
+  }
 }

@@ -43,3 +43,17 @@
   background: #fbb30b;
   color: #fff;
 }
+
+@media (max-width: 575px) {
+  .container {
+    align-items: flex-end;
+  }
+  .box {
+    flex-direction: column;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .box span {
+    display: block;
+  }
+}
