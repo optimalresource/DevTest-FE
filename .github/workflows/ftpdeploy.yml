@@ -5,22 +5,22 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
 
-    - name: Use Node.js 14
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-      
-    - name: 🔨 Build Project
-      run: |
-        yarn install
-        yarb run build
-    
-    - name: 📂 Sync files
-      uses: optimalresource/DevTest-FE@1.0.0
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.password }}
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: 🔨 Build Project
+        run: |
+          yarn install
+          yarb run build
+
+      - name: 📂 Sync files
+        uses: optimalresource/DevTest-FE@1.0.1
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.password }}
