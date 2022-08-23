@@ -37,3 +37,11 @@ jobs:
 
       - name: Run react build script
         run: yarn && yarn build
+
+      - name: FTP-Deploy-Action
+        uses: optimalresource/DevTest-FE@1.0.1
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build/
